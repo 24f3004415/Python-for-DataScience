@@ -3,7 +3,8 @@
 def func(i,N):
     if i == N:
         return
-    func(i,N-1)
     print(N)
+    func(i,N-1)
+    
 
 func(0,4)

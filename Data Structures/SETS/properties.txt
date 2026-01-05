@@ -1,0 +1,22 @@
+<--properties-->
+1. unordered
+2. {} -> comma separated
+3. unique elements
+4. s = {}
+5. sets are mutable
+
+-->Data Structure conversion
+l = [1,5,2,6,3,4,7,8,9,6,5,4,1,2,5,8,7]
+s = set(l)
+print(s)  -->  {1,2,3,4,5,6,7,8,9}
+
+-->METHODS
+
+1- add()
+2- pop()  by default removes first element
+3- remove() we need to give elements
+
+1- intersection --> Returns common element
+2- union --> returns all the ekemnts present in both the sets
+3- Difference(s1-s2) --> s1 m h but s2 m nhi h
+4. Symmetric difference() --> jo common nhi h

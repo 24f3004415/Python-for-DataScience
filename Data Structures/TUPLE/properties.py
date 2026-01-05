@@ -1,0 +1,8 @@
+# PROPERTIES:-
+# 1. ORDERED
+# 2. IMMUTABLE
+# 3. ALLOWS DUPLICATE
+
+t = (10,20,30)
+a = t[0]
+print(a)
