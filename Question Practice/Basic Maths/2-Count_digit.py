@@ -16,3 +16,6 @@ else:
 #     num = num // 10
 
 # print(count)
+
+str = "Mohit"
+print(f"There are total {len(str)} characters in the string")
