@@ -14,7 +14,29 @@
 
 # PRACTICE
 
-def SelectionSort(nums):
+# def SelectionSort(nums):
+#     n = len(nums)
+#     if n <= 1:
+#         return nums
+
+#     for i in range(n):
+#         min_index = i
+#         for j in range(i+1,n):
+#             if nums[j] < nums[min_index]:
+#                 min_index = j
+
+#         nums[i],nums[min_index] = nums[min_index],nums[i]
+
+#     return nums
+
+# print(SelectionSort([4,5,2,1,3]))
+
+
+
+# PRACTICE
+
+
+def selection_sort(nums):
     n = len(nums)
     if n <= 1:
         return nums
@@ -25,8 +47,8 @@ def SelectionSort(nums):
             if nums[j] < nums[min_index]:
                 min_index = j
 
-        nums[i],nums[min_index] = nums[min_index],nums[i]
+        nums[i], nums[min_index] = nums[min_index], nums[i]
 
     return nums
 
-print(SelectionSort([4,5,2,1,3]))
+print(selection_sort([4,5,2,1,3]))
