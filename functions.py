@@ -3,7 +3,7 @@ def add(*chacha):
     print(type(chacha))
     print(sum(chacha))
 
-add(1,2,3,4,5,6,7,8,9,0)
+add(1,2,3,4,5,6,7,8,9,0,5)
 
 # **Kwargs() --> dictionary ka form
 # keywords argument
