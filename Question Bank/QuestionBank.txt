@@ -1,0 +1,266 @@
+📋 List Problems → LeetCode / GeeksforGeeks 
+🟢 Basic List Operations
+
+1. Find all prime numbers in a list
+Platform: GeeksforGeeks
+Problem: Program to print prime numbers from 1 to N
+​
+Doc-Link: 
+https://www.geeksforgeeks.org/dsa/program-to-print-first-n-prime-numbers/
+
+Alternate (count primes logic): LeetCode – Count Primes
+
+Practice-Link: 
+https://leetcode.com/problems/count-primes/
+​
+
+
+
+
+2. Remove duplicate elements while preserving order
+Platform: GeeksforGeeks
+
+Problem: Python – Remove Duplicates from a list And Keep The Order
+​
+
+Doc-Link (article): 
+https://www.geeksforgeeks.org/python/python-list-remove-duplicates-and-keep-the-order/
+
+
+
+
+3. Find the second largest number in a list
+Platform: GeeksforGeeks
+
+Problem: Second Largest
+
+Practice-Link: 
+https://www.geeksforgeeks.org/problems/second-largest3735/1
+​
+
+
+
+
+
+4. Rotate a list to the right by K positions
+Platform: GeeksforGeeks
+
+Problem: Array after K Rotations (Clockwise)
+​
+
+Doc-Link: 
+https://www.geeksforgeeks.org/dsa/print-array-after-it-is-right-rotated-k-times/
+
+Practice-Link (rotation problem): 
+https://www.geeksforgeeks.org/problems/rotate-array-by-n-elements-1587115621/1
+​
+
+
+
+
+
+5. Split a list into even and odd numbers
+Platform: GeeksforGeeks
+
+Problem: Python Program to Split Even and Odd elements into two lists
+​
+
+Doc-Link (Python-focused): 
+https://www.geeksforgeeks.org/python/python-split-even-odd-elements-two-different-lists/
+
+
+
+
+
+
+🟡 Frequency, Duplicates & Subarrays
+6. Find all elements that appear more than once
+Platform: GeeksforGeeks
+
+Problem: Find Duplicates in an Array
+
+Practice-Link: https://www.geeksforgeeks.org/problems/find-duplicates-in-an-array/1
+
+
+
+
+
+7. Count frequency of each element (using lists only)
+Platform: GeeksforGeeks
+
+Problem: Frequency of Array Elements
+
+Practice-Link: https://www.geeksforgeeks.org/problems/frequency-of-array-elements-1587115620/1
+
+
+
+
+
+8. Find the longest increasing consecutive sublist
+Platform: GeeksforGeeks
+
+Problem: Longest Increasing Subarray
+​
+
+Doc-Link 1: 
+https://www.geeksforgeeks.org/dsa/print-the-longest-increasing-consecutive-subarray/
+​
+
+Doc-Link 2: 
+https://www.geeksforgeeks.org/dsa/longest-increasing-subarray/
+​
+
+Practice-Link: https://www.geeksforgeeks.org/problems/longest-increasing-subarray3811/1
+
+
+
+
+
+🔵 Reversal, Palindrome & Missing Elements
+9. Reverse a list without using reverse() or slicing
+Platform: GeeksforGeeks
+
+Problem: Reverse an Array
+
+Practice-Link: 
+https://www.geeksforgeeks.org/problems/reverse-an-array/1
+​
+
+
+
+
+
+10. Check if a list is a palindrome
+Platform: LeetCode
+
+Problem: Palindrome Linked List
+
+Practice-Link: 
+https://leetcode.com/problems/palindrome-linked-list/
+​
+
+
+
+
+
+11. Find missing numbers in a given range
+Platform: GeeksforGeeks
+
+Problem: Missing Number in Array (single-missing version, same pattern)
+
+Practice-Link: https://www.geeksforgeeks.org/problems/missing-number-in-array1416/1
+
+
+
+
+🟣 Rearrangement & Pair Problems
+12. Move all zeros to the end (maintain order)
+Platform: LeetCode
+
+Problem: Move Zeroes
+
+Practice-Link: 
+https://leetcode.com/problems/move-zeroes/
+​
+
+
+
+
+
+13. Find common elements between two lists
+Platform: GeeksforGeeks
+
+Problem: Intersection of Two Arrays (distinct)
+
+Practice-Link: 
+https://www.geeksforgeeks.org/problems/intersection-of-two-arrays2404/1
+​
+
+
+
+
+
+
+14. Find all pairs whose sum equals a given value
+Platform: GeeksforGeeks
+
+Problem: Count Pairs with Given Sum
+
+Practice-Link: https://www.geeksforgeeks.org/problems/count-pairs-with-given-sum5022/1
+
+
+
+
+
+
+🟠 Transformation & Sorting
+15. Replace all negative numbers with zero
+Platform: GeeksforGeeks
+
+Problem: Replace Negative Values with Zero in a List
+​
+
+Doc-Link: https://www.geeksforgeeks.org/python/python-program-to-replace-negative-values-with-zero-in-a-list/
+
+
+
+
+
+
+16. Find the maximum difference between two elements
+Platform: GeeksforGeeks
+
+Problem: Maximum Difference Between Two Elements
+
+Practice-Link: https://www.geeksforgeeks.org/problems/maximum-difference-1587115620/1
+
+
+
+
+
+
+
+17. Sort a list without using sort()
+Platform: GeeksforGeeks
+
+Problem: Bubble Sort (implement your own sort)
+
+Doc-Link (with code editor): https://www.geeksforgeeks.org/bubble-sort/
+
+
+
+
+
+
+🔴 Logical & Advanced List Checks
+18. Find all elements greater than the average
+Platform: GeeksforGeeks
+
+Problem: Program for Average of an Array (use + custom filter)
+
+Doc-Link: https://www.geeksforgeeks.org/program-for-average-of-an-array/
+
+
+
+
+
+
+19. Check if two lists are rotations of each other
+Platform: GeeksforGeeks
+
+Problem: Check if Two Given Arrays Are Rotations of Each Other
+
+Doc-Link (with code box): https://www.geeksforgeeks.org/check-if-two-given-arrays-are-rotations-of-each-other/
+
+
+
+
+
+
+20. Flatten a nested list (1 level deep)
+Platform: GeeksforGeeks
+
+Problem: Flatten a List of Lists in Python
+
+Doc-Link (Python, interactive): 
+https://www.geeksforgeeks.org/python/flatten-a-list-of-lists-in-python/
