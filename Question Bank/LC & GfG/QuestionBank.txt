@@ -19,7 +19,7 @@ https://leetcode.com/problems/count-primes/
 
 
 
-2. Remove duplicate elements while preserving order  ⌛
+2. Remove duplicate elements while preserving order  ✅
 Platform: GeeksforGeeks
 
 Problem: Python – Remove Duplicates from a list And Keep The Order
@@ -31,7 +31,7 @@ https://www.geeksforgeeks.org/python/python-list-remove-duplicates-and-keep-the-
 
 
 
-3. Find the second largest number in a list  ⌛
+3. Find the second largest number in a list  ✅
 Platform: GeeksforGeeks
 
 Problem: Second Largest
