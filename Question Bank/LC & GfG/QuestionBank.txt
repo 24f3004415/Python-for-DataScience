@@ -44,7 +44,7 @@ https://www.geeksforgeeks.org/problems/second-largest3735/1
 
 
 
-4. Rotate a list to the right by K positions  ⌛
+4. Rotate a list to the right by K positions  ✅
 Platform: GeeksforGeeks
 
 Problem: Array after K Rotations (Clockwise)
@@ -61,7 +61,7 @@ https://www.geeksforgeeks.org/problems/rotate-array-by-n-elements-1587115621/1
 
 
 
-5. Split a list into even and odd numbers  ⌛
+5. Split a list into even and odd numbers  ✅
 Platform: GeeksforGeeks
 
 Problem: Python Program to Split Even and Odd elements into two lists
