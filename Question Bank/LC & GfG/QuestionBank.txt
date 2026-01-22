@@ -101,7 +101,7 @@ Practice-Link: https://www.geeksforgeeks.org/problems/frequency-of-array-element
 
 
 
-8. Find the longest increasing consecutive sublist  ⌛
+8. Find the longest increasing consecutive sublist  ✅🔄
 Platform: GeeksforGeeks
 
 Problem: Longest Increasing Subarray
@@ -122,7 +122,7 @@ Practice-Link: https://www.geeksforgeeks.org/problems/longest-increasing-subarra
 
 
 🔵 Reversal, Palindrome & Missing Elements
-9. Reverse a list without using reverse() or slicing  ⌛
+9. Reverse a list without using reverse() or slicing  ✅
 Platform: GeeksforGeeks
 
 Problem: Reverse an Array
@@ -135,13 +135,13 @@ https://www.geeksforgeeks.org/problems/reverse-an-array/1
 
 
 
-10. Check if a list is a palindrome  ⌛
+10. Check if a array is a palindrome  ✅
 Platform: LeetCode
 
 Problem: Palindrome Linked List
 
 Practice-Link: 
-https://leetcode.com/problems/palindrome-linked-list/
+https://www.geeksforgeeks.org/problems/perfect-arrays4645/1
 ​
 
 
