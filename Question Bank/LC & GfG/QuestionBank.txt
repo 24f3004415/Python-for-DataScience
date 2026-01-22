@@ -90,7 +90,7 @@ Practice-Link: https://www.geeksforgeeks.org/problems/find-duplicates-in-an-arra
 
 
 
-7. Count frequency of each element (using lists only)  ⌛
+7. Count frequency of each element (using lists only)  ✅
 Platform: GeeksforGeeks
 
 Problem: Frequency of Array Elements
