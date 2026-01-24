@@ -138,7 +138,7 @@ https://www.geeksforgeeks.org/problems/reverse-an-array/1
 10. Check if a array is a palindrome  ✅
 Platform: LeetCode
 
-Problem: Palindrome Linked List
+Problem: Palindrome List
 
 Practice-Link: 
 https://www.geeksforgeeks.org/problems/perfect-arrays4645/1
