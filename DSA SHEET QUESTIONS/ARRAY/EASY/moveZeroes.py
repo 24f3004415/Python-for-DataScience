@@ -1,16 +1,16 @@
-nums = [0,1,0,3,12]
+# nums = [0,1,0,3,12]
 
-occurences = nums.count(0)
-for _ in range(occurences):
-    nums.remove(0)
-    nums.append(0)
+# occurences = nums.count(0)
+# for _ in range(occurences):
+#     nums.remove(0)
+#     nums.append(0)
 
-print(nums)
+# print(nums)
 
 
 # OPTIMAL SOLUTION
 
-def moveZeroes(nums: List[int]):
+def moveZeroes(nums):
     left = 0  # Position to place next non-zero
         
     # Move all non-zeros to the front
@@ -20,3 +20,5 @@ def moveZeroes(nums: List[int]):
             left += 1
 
     return nums
+
+print(moveZeroes([0,1,0,3,12]))
