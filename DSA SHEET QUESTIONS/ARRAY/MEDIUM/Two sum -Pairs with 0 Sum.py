@@ -1,3 +1,10 @@
+# Input: arr = [-1, 0, 1, 2, -1, -4]
+# Output: [[-1, 1]]
+# Explanation: arr[0] + arr[2] = (-1)+ 1 = 0.
+# arr[2] + arr[4] = 1 + (-1) = 0.
+# The distinct pair are [-1,1].
+
+
 class Solution:
     def getPairs(self, arr):
         arr.sort()
