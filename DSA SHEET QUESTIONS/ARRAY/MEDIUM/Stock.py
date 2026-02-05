@@ -1,11 +1,10 @@
-prices = [7,2,1,5,6,4,8]
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        max_profit = 0
+        min_price = float('inf')
 
-min_price = float('inf')
-profit = 0
+        for i in range(len(prices)):
+            min_price = min(min_price, prices[i])
+            max_profit = max(max_profit, prices[i] - min_price)
 
-for i in range(len(prices)):
-    if prices[i] < min_price:
-        min_price = prices[i]
-    
-    if prices[i] > min_price:
-        profit = prices[i] - min_price
+        return max_profit
