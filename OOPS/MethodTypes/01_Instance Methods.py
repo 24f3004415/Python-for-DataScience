@@ -1,3 +1,7 @@
+# 1. Instance Methods
+# • Take self as the first argument.
+# • Can access both instance attributes and class attributes.
+
 class laptop:
     storage_type = "SSD"
 
