@@ -1,6 +1,7 @@
 # single level inheritance
-#  Multiple level inheritance
 # multilevel
+# Multiple level inheritance -- 2 parent class and 1 child class
+
 
 class Animal:
     def __init__(self, name,age,):
@@ -19,6 +20,8 @@ class Animal:
     def gender(self):
         print(f"Do cats Sleep? --> {self.__gender}")
 
+
+
 class Cat(Animal):
     def __init__(self, name, age, breed):
         super().__init__(name, age)
@@ -26,8 +29,10 @@ class Cat(Animal):
 
     def Show2(self):
         print("This is cat class!! Inherited Animal class")
-        print(f"{self.name} and {self.age} and breed is {self.breed} and gender is {self.__gender}")
+        print(f"{self.name} and {self.age} and breed is {self.breed}")
         print("Hence Proved")
+
+
 
 obj = Cat("Shera", 4, "bagadbilla")
 obj.Show2()
