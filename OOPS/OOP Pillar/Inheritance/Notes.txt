@@ -1,0 +1,15 @@
+Inheritance
+
+Inheritance is where one class (child) acquires the properties and behaviors (variables
++ methods) of another class (parent).
+
+The class whose properties are inherited - Parent / Base / Superclass
+
+The class that inherits - Child / Derived / Subclass
+
+Inheritance enables:
+    • Code reuse
+    • Extensibility
+    • Cleaner, maintainable design
+    • Polymorphism
+
