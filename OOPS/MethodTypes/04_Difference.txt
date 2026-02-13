@@ -1,0 +1,20 @@
+| Feature              | Instance Method | Class Method   | Static Method   |
+| -------------------- | --------------- | -------------- | --------------- |
+
+| First Parameter      | `self`          | `cls`          | None            |
+| Access Instance Data | ✅             | ❌             | ❌              |
+| Access Class Data    | ✅             | ✅             | ❌              |
+| Decorator            | None            | `@classmethod` | `@staticmethod` |
+
+
+🧠 Ek Powerful Real-Life Analogy
+
+Socho:
+
+👨‍🎓 Student Class
+
+Instance Method → Student ka personal data use karta hai
+
+Class Method → School level ka data change karta hai
+
+Static Method → School ke rules ya utility function
