@@ -1,0 +1,4 @@
+Encapsulation is the bundling of data (variables) and methods (functions) that
+operate on that data into a single unit (a class), along with controlling access to that
+data. This is done to protect the data from accidental or unauthorized modification.
+To implement encapsulation, we use access modifiers. Python has 3 access levels:
