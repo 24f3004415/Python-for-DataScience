@@ -1,1 +1,19 @@
-[{}]
+[
+    {
+        "name": "Mohit",
+        "age": 19,
+        "email": "mohit@gmail.com",
+        "pin": 1234,
+        "account No.": 1234567890,
+        "balance": 0
+    },
+    {
+        "name": "Aakarsh Bhaiya",
+        "age": 25,
+        "email": "aakarsh@gmail.com",
+        "pin": 1234,
+        "phone No.": 1234567890,
+        "account No.": 1234567890,
+        "balance": 0
+    }
+]
