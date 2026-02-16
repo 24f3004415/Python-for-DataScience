@@ -1,5 +1,7 @@
 from pathlib import Path
 import json
+import random
+import string
 
 class Bank:
     database = r"C:\Users\HP\Downloads\python shery\OOPS\Project\BANKING\data.json"
@@ -22,6 +24,15 @@ class Bank:
         with open(Bank.database, 'w') as fs:
             fs.write(json.dumps(cls.data))
 
+    #Generate Random Account Number
+    @staticmethod
+    def generateAccountNo():
+        randomNumbers = random.choices(string.digits, k=4)
+        randomAlphabets = random.choices(string.ascii_letters, k=4)
+        id = randomNumbers + randomAlphabets
+        random.shuffle(id)
+        return ''.join(id)
+
     # create user
     def createAccount(self):
         info = {
@@ -30,7 +41,7 @@ class Bank:
             'email' : input("ENter your email: "),
             'pin' : int(input("Enter your pin: ")),
             'phone No.' : int(input("ENter your phone No.")),
-            'account No.' : 1234567890,
+            'account No.' : Bank.generateAccountNo(),
             'balance' : 0
         }
 
