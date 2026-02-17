@@ -52,8 +52,97 @@ class Bank:
 
         else:
             print("Account cannot be created due to Wrong Credentials !!!")
+
+
+    # function to deposit money
+    def depositMoney(self):
+        AccountNumber = input("Enter your Account Number: ")
+        PinNumber = int(input("Enter your pin: "))
+
+        user_data = [i for i in Bank.data if i['account No.'] == AccountNumber and i['pin'] == PinNumber]
+
+        if user_data == False:
+            print("User does not exist!!!")
+
+        else:
+            Money = int(input('Enter the amount you want to deposit: '))
+            if Money <= 0:
+                print("Invalid Input :( ")
+
+            elif Money > 10_000:
+                print('deposit limit exceeded!!!')
+
+            else:
+                user_data[0]['balance'] += Money
+                Bank.update()
+                print(f"Rs. {Money} has been credited successfully!!")
+                print("THANK YOU FOR BANKING WITH US :) ")
+
+
+    # function to withdraw money
+    def withdrawMoney(self):
+        AccountNumber = input("Enter your Account Number: ")
+        PinNumber = int(input("Enter your pin: "))
+
+        user_data = [i for i in Bank.data if i['account No.'] == AccountNumber and i['pin'] == PinNumber]
+
+        if user_data == False:
+            print("User does not exist!!!")
+
+        else:
+            Money = int(input('Enter the amount you want to withdraw: '))
+
+            if Money <= 0:
+                print("Invalid Input :( ")
+
+            elif Money > 10_000:
+                print('withdraw limit exceeded!!!')
+
+            else:
+                if user_data[0]['balance'] < Money:
+                    print("You don't have sufficient balance in your account")
+                else:
+                    user_data[0]['balance'] -= Money
+                    Bank.update()
+                    print(f"Rs. {Money} has been withdrawn successfully!!")
+                    print("THANK YOU FOR BANKING WITH US :) ")
+
+
+    # function to see customer details
+    def details(self):
+        AccountNumber = input("Enter your Account Number: ")
+        PinNumber = int(input("Enter your pin: "))
+
+        user_data = [i for i in Bank.data if i['account No.'] == AccountNumber and i['pin'] == PinNumber]
+
+        if user_data == False:
+            print("User does not exist!!!")
+
+        else:
+            for i in user_data[0]:
+                print('Your details are as follows: ')
+                print(f"{i} : {user_data[0][i]}")
+                print('THANK YOU FOR BANKING WITH US!!')
+                print("Have a good day!!!")
             
 
 obj = Bank()
-obj.createAccount()
 
+print("Enter 1 to create account.")
+print("Enter 2 to deposit money in your account.")
+print("Enter 3 to withdraw money.")
+print("Enter 4 to check your account details.")
+
+user_input = int(input("Enter your response to proceed: "))
+
+if user_input == 1:
+    obj.createAccount()
+
+if user_input == 2:
+    obj.depositMoney()
+
+if user_input == 3:
+    obj.withdrawMoney()
+
+if user_input == 4:
+    obj.details()
