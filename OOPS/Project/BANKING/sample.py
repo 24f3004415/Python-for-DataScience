@@ -7,6 +7,24 @@ database = [
         "phone No.": 9304495153,
         "account No.": "4d8rI60l",
         "balance": 0
+    },
+    {
+        "name": "Mohit",
+        "age": 19,
+        "email": "mohit@gmail.com",
+        "pin": 2007,
+        "phone No.": 9304495153,
+        "account No.": "5d8rI60l",
+        "balance": 0
+    },
+    {
+        "name": "Mohit",
+        "age": 19,
+        "email": "mohit@gmail.com",
+        "pin": 2006,
+        "phone No.": 9304495153,
+        "account No.": "4d8rI60l",
+        "balance": 0
     }
 ]
 

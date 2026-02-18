@@ -7,5 +7,14 @@
         "phone No.": 9304495153,
         "account No.": "4d8rI60l",
         "balance": 5000
+    },
+    {
+        "name": "Vaibhav",
+        "age": 20,
+        "email": "vaibhav@bank.com",
+        "pin": 5689,
+        "phone No.": 5876259452,
+        "account No.": "ac4I733m",
+        "balance": 0
     }
 ]

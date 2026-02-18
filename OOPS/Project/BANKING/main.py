@@ -119,12 +119,50 @@ class Bank:
             print("User does not exist!!!")
 
         else:
+            print('------------------------------')
+            print('Your details are as follows: ')
             for i in user_data[0]:
-                print('Your details are as follows: ')
                 print(f"{i} : {user_data[0][i]}")
-                print('THANK YOU FOR BANKING WITH US!!')
-                print("Have a good day!!!")
-            
+                
+        print('THANK YOU FOR BANKING WITH US!!')
+        print("Have a good day!!!")
+
+
+    # function to delete customer account
+    def delete_account(self):
+        print('-------------------------------------------')
+        AccountNumber = input("Enter your Account Number: ")
+        PinNumber = int(input("Enter your pin: "))
+
+        user_data = [i for i in Bank.data if i['account No.'] == AccountNumber and i['pin'] == PinNumber]
+
+        if user_data == False:
+            print("User does not exist!!!")
+
+        else:
+            print('-------------------------------------------')
+            print('Are you sure you want to delete your account?')
+            print('Press 1 to continue')
+            print('Press 2 to revert back.')
+            print('-------------------------------------------')
+            user_delete_choice = int(input('Enter your choice: '))
+
+            if user_delete_choice == 1:
+                idx = Bank.data.index(user_data[0])
+                Bank.data.pop(idx)
+                Bank.update()
+                print('-------------------------------------------')
+                print('Account deleted Successfully!!')
+                print('-------------------------------------------')
+                print("Thank you for banking with us...")
+
+            elif user_delete_choice == 2:
+                print('-------------------------------------------')
+                print("Operation Terminated")
+
+            elif user_delete_choice != 1 and user_delete_choice != 2:
+                print('-------------------------------------------')
+                print("Invalid Input.")            
 
 obj = Bank()
 
@@ -132,6 +170,8 @@ print("Enter 1 to create account.")
 print("Enter 2 to deposit money in your account.")
 print("Enter 3 to withdraw money.")
 print("Enter 4 to check your account details.")
+print("Enter 5 to update your account details.")
+print("Enter 6 to delete your account.")
 
 user_input = int(input("Enter your response to proceed: "))
 
@@ -146,3 +186,9 @@ if user_input == 3:
 
 if user_input == 4:
     obj.details()
+
+if user_input == 5:
+    obj.update_account()
+
+if user_input == 6:
+    obj.delete_account()
