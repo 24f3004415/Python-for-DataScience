@@ -164,6 +164,44 @@ class Bank:
                 print('-------------------------------------------')
                 print("Invalid Input.")            
 
+    def update_account(self):
+
+        print('-------------------------------------------')
+        AccountNumber = input("Enter your Account Number: ")
+        PinNumber = int(input("Enter your pin: "))
+
+        user_data = [i for i in Bank.data if i['account No.'] == AccountNumber and i['pin'] == PinNumber]
+        if user_data == False:
+            print("User does not exist!!!")
+
+        else:
+            print('You cannot change your account number.')
+            print('Enter your new details if you want to update or Enter key otherwise.')
+
+            new_data = {
+            'name' : input("Enter your name: "),
+            'age' : int(input("Enter your age: ")),
+            'email' : input("ENter your email: "),
+            'pin' : int(input("Enter your pin: ")),
+            'phone No.' : int(input("ENter your phone No.")),
+        }
+
+        if new_data['name'] == "":
+            new_data['name'] = user_data[0]['name']
+        if new_data['age'] == "":
+            new_data['age'] = user_data[0]['age']
+        if new_data['email'] == "":
+            new_data['email'] = user_data[0]['email']
+        if new_data['pin'] == "":
+            new_data['pin'] = user_data[0]['pin']
+        if new_data['phone No.'] == "":
+            new_data['phone No.'] = user_data[0]['phone No.']
+
+        new_data['account No.'] = user_data[0]['Account No.']
+        new_data['balance'] = user_data[0]['balance']
+
+        Bank.update()
+
 obj = Bank()
 
 print("Enter 1 to create account.")
