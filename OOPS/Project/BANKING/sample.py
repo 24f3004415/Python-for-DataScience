@@ -45,11 +45,14 @@
 
 
 a = {'a':10, 'b':20, 'c':30}
-b = {'a': 'Repalced', 'c': 'Replaced'}
+b = {'a': 'Repalced','b': 'replaced', 'c': 'Replaced'}
 
+# Method - 1
 for i in a:
     if i in b:
         a[i] = b[i]
 
+# Method - 2
+# a.update(b)
 print(a)
     

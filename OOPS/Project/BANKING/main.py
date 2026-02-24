@@ -20,13 +20,13 @@ class Bank:
         print(f"Error occurred: {err}")
 
     @classmethod
-    def update(cls):
+    def __update(cls):
         with open(Bank.database, 'w') as fs:
             fs.write(json.dumps(cls.data))
 
     #Generate Random Account Number
     @staticmethod
-    def generateAccountNo():
+    def __generateAccountNo():
         randomNumbers = random.choices(string.digits, k=4)
         randomAlphabets = random.choices(string.ascii_letters, k=4)
         id = randomNumbers + randomAlphabets
@@ -41,13 +41,13 @@ class Bank:
             'email' : input("ENter your email: "),
             'pin' : int(input("Enter your pin: ")),
             'phone No.' : int(input("ENter your phone No.")),
-            'account No.' : Bank.generateAccountNo(),
+            'account No.' : Bank.__generateAccountNo(),
             'balance' : 0
         }
 
         if info['age'] > 18 and len(str(info['pin'])) == 4 and len(str(info['phone No.'])) == 10:
             Bank.data.append(info)
-            Bank.update()
+            Bank.__update()
             print('Data added in a list.')
 
         else:
@@ -74,7 +74,7 @@ class Bank:
 
             else:
                 user_data[0]['balance'] += Money
-                Bank.update()
+                Bank.__update()
                 print(f"Rs. {Money} has been credited successfully!!")
                 print("THANK YOU FOR BANKING WITH US :) ")
 
@@ -103,7 +103,7 @@ class Bank:
                     print("You don't have sufficient balance in your account")
                 else:
                     user_data[0]['balance'] -= Money
-                    Bank.update()
+                    Bank.__update()
                     print(f"Rs. {Money} has been withdrawn successfully!!")
                     print("THANK YOU FOR BANKING WITH US :) ")
 
@@ -150,7 +150,7 @@ class Bank:
             if user_delete_choice == 1:
                 idx = Bank.data.index(user_data[0])
                 Bank.data.pop(idx)
-                Bank.update()
+                Bank.__update()
                 print('-------------------------------------------')
                 print('Account deleted Successfully!!')
                 print('-------------------------------------------')
@@ -164,7 +164,7 @@ class Bank:
                 print('-------------------------------------------')
                 print("Invalid Input.")            
 
-    def update_account(self):
+    def __update_account(self):
 
         print('-------------------------------------------')
         AccountNumber = input("Enter your Account Number: ")
@@ -175,32 +175,42 @@ class Bank:
             print("User does not exist!!!")
 
         else:
-            print('You cannot change your account number.')
-            print('Enter your new details if you want to update or Enter key otherwise.')
+            print('You cannot change your account number and balance.')
+            print('Enter your new details if you want to __update or Enter key otherwise.')
 
             new_data = {
-            'name' : input("Enter your name: "),
-            'age' : int(input("Enter your age: ")),
-            'email' : input("ENter your email: "),
-            'pin' : int(input("Enter your pin: ")),
-            'phone No.' : int(input("ENter your phone No.")),
+            'name' : input("Enter your new name: "),
+            'age' : int(input("Enter your new age: ")),
+            'email' : input("ENter your new email: "),
+            'pin' : int(input("Enter your new pin: ")),
+            'phone No.' : int(input("ENter your new phone No.")),
         }
 
         if new_data['name'] == "":
             new_data['name'] = user_data[0]['name']
+
         if new_data['age'] == "":
             new_data['age'] = user_data[0]['age']
+
         if new_data['email'] == "":
             new_data['email'] = user_data[0]['email']
+
         if new_data['pin'] == "":
             new_data['pin'] = user_data[0]['pin']
+        else:
+            new_data['pin'] = int(new_data['pin'])
+
         if new_data['phone No.'] == "":
             new_data['phone No.'] = user_data[0]['phone No.']
+        else:
+            new_data['phone No.'] = int(new_data['phone No.'])
 
-        new_data['account No.'] = user_data[0]['Account No.']
+
+        new_data['account No.'] = user_data[0]['account No.']
         new_data['balance'] = user_data[0]['balance']
 
-        Bank.update()
+        user_data[0].__update(new_data)
+        Bank.__update()
 
 obj = Bank()
 
@@ -208,7 +218,7 @@ print("Enter 1 to create account.")
 print("Enter 2 to deposit money in your account.")
 print("Enter 3 to withdraw money.")
 print("Enter 4 to check your account details.")
-print("Enter 5 to update your account details.")
+print("Enter 5 to __update your account details.")
 print("Enter 6 to delete your account.")
 
 user_input = int(input("Enter your response to proceed: "))
@@ -226,7 +236,7 @@ if user_input == 4:
     obj.details()
 
 if user_input == 5:
-    obj.update_account()
+    obj.__update_account()
 
 if user_input == 6:
     obj.delete_account()
