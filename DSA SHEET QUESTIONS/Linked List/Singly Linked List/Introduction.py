@@ -29,6 +29,28 @@ class Singly_Linked_List:
                 curr = curr.next
             print()
 
+    def insert_at(self,val,position):
+        if position < 0:
+            raise IndexError("Negative position is not supported.Go to hell!!!")
+
+        new_node = Node(val)
+        if position == 0:
+            new_node.next = self.head
+            self.head = new_node
+        else:
+            current = self.head
+            prev_node = None
+            count = 0
+            
+            while current is not None and count < position:
+                prev_node = current
+                current = current.next
+                count += 1
+
+            prev_node.next = new_node
+            new_node.next = current
+            
+
 SLL = Singly_Linked_List()
 SLL.append(10)
 SLL.append(20)
@@ -36,4 +58,5 @@ SLL.append(30)
 SLL.append(40)
 SLL.append(50)
 SLL.append(60)
+SLL.insert_at(35, -3)
 SLL.traversal()
