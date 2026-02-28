@@ -49,6 +49,30 @@ class Singly_Linked_List:
 
             prev_node.next = new_node
             new_node.next = current
+
+    def delete(self, val):
+        temp = self.head
+        if temp.next != None:
+            if temp.val == val:
+                self.head = temp.next
+                temp = None
+                del temp
+                return
+            else:
+                found = False
+                prev = None
+                while temp != None:
+                    if temp.val == val:
+                        found = True
+                        break
+                    prev = temp
+                    temp = temp.next
+
+                if found:
+                    prev.next = temp.next
+                    return
+                else:
+                    print("Element not found!!!")
             
 
 SLL = Singly_Linked_List()
@@ -58,5 +82,6 @@ SLL.append(30)
 SLL.append(40)
 SLL.append(50)
 SLL.append(60)
-SLL.insert_at(35, -3)
+SLL.insert_at(35, 3)
+SLL.delete(100)
 SLL.traversal()
