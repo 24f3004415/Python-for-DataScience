@@ -18,6 +18,32 @@ class Singly_Linked_List:
                 curr = curr.next
             curr.next = new_node
 
+    def addAtHead(self, val: int) -> None:
+        new_node = Node(val)
+        new_node.next = self.head
+        self.head = new_node
+
+    def addAtTail(self, val: int) -> None:
+        new_node = Node(val)
+        current = self.head
+        while current != None:
+            current = current.next
+        current.next = new_node
+
+    def get(self, index: int) -> int:
+        if index < 0:
+            return -1
+
+        current = self.head
+        count = 0
+        while current != None:
+            if index == count:
+                return current.val
+            current = current.next
+            count += 1
+        else:
+            return -1
+
     def traversal(self):
         if self.head == None:
             print('Singly Linked List is empty!!!')
@@ -82,6 +108,8 @@ SLL.append(30)
 SLL.append(40)
 SLL.append(50)
 SLL.append(60)
+SLL.addAtHead(67)
+SLL.addAtTail(67)
 SLL.insert_at(35, 3)
-SLL.delete(100)
+print(SLL.get(2))
 SLL.traversal()
